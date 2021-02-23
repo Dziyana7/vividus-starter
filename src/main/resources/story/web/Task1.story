@@ -25,7 +25,8 @@ Examples:
 Scenario: Create yor Trello team
 When I enter `MyTeam` in field located `By.xpath(//*[@id="moonshotCreateTeam"])`
 When I select `Other` in dropdown located `//div[@class="css-196czu8"]`
-When I click on element located `By.xpath(//*[@id="signup-submit"]/span/span/span)`
+When I click on element located `By.xpath(//*[@id="recaptcha-verify-button"])`
+When I click on element located `By.xpath(//*[@id="recaptcha-verify-button"])`
 Then the page title is equal to 'Try Business Class for 30 days'
 
 Scenario: Final step
