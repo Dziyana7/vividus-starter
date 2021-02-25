@@ -14,3 +14,15 @@ Then the page load time should be less than '15000' milliseconds
 Examples:
 |email                  |fullname   |password    |
 |test123m@mailinator.com|user123    |1234567890Qq|
+
+Scenario: Create yor Trello team
+When I enter `MyTeam` in field located `By.xpath(//*[@id="moonshotCreateTeam"])`
+When I select `Other` in dropdown located `//div[@class="css-196czu8"]`
+When I click on element located `By.xpath(//*[@id="recaptcha-verify-button"])`
+When I click on element located `By.xpath(//*[@id="recaptcha-verify-button"])`
+Then the page title is equal to 'Try Business Class for 30 days'
+
+Scenario: Final step
+When I click on element located `By.xpath(//button[@class="_2rYx24i4YFfVIi"])`
+When I click on element located `By.xpath(//button[@class="p9S6e94xTDpLPQ voB8NatlbuEme5 gkv95EhjCrfcEU"])`
+Then the text 'Welcome, <fullname>' exists

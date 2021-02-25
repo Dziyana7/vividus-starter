@@ -15,8 +15,6 @@ When I enter `<password>` in field located `By.xpath(//*[@id="password"])`
 When I click on element located `By.xpath(//*[@id="login-submit"])`
 Then the page load time should be less than '12000' milliseconds
 
-
-
 Examples:
 |email                |password  |
 |test01@mailinator.com|12345678Qq|
